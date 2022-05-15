@@ -23,6 +23,10 @@ body {
     align-items: center;
     height: 69px;
     border-bottom: 1px solid seashell;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav__box__logo__img {
@@ -60,9 +64,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.9;
+    height: 700px;
+    overflow: hidden;
+}
+
+.container__box__mission__background {
+    outline: var( --outline-color) 2px solid;
+    opacity: 0.7;
 }
 
 .container__box__mission__text {
+    outline: var( --outline-color) 2px solid;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -70,4 +83,6 @@ body {
     position: absolute;
     color: seashell;
     background-color: black;
+    width: 1200px;
+    line-height: 50px;
 }
