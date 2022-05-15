@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+    font-family: Helvetica;
+}
+
+header {
+    height: 69px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#logo {
+    position: absolute;
+    justify-content: flex-start;
+    height: 50px;
+    left: 10px;
+}
+
+#nav-links {
+    color: aliceblue;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+#nav-links li {
+    display: flex;
+    padding: 13px;
+    font-size: 22px;
+}
