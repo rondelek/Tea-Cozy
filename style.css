@@ -4,40 +4,65 @@
     box-sizing: border-box;
   }
 
+:root {
+    --outline-color: red;
+}
+
 body {
     background-color: black;
+    color: seashell;
     font-family: Helvetica;
     opacity: 0.9;
 }
 
-header {
-    height: 69px;
-    width: 100%;
+.nav {
+    outline: var( --outline-color) 2px solid;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center; 
+    height: 69px;
     border-bottom: 1px solid seashell;
 }
 
-#logo {
-    position: absolute;
-    justify-content: flex-start;
+.nav__box__logo__img {
+    outline: var( --outline-color) 2px solid;
     height: 50px;
-    left: 10px;
+    margin-left: 10px;
 }
 
-#nav-links {
-    color: aliceblue;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+
+.nav__box__menu {
+    justify-self: flex-end;
     margin-left: auto;
 }
 
-#nav-links a {
+.nav__box__menu__items{
+    outline: var( --outline-color) 2px solid;
     display: flex;
+    list-style-type: none;
+}
+.nav__box__menu__items__item a {
     padding: 13px;
     font-size: 22px;
-    text-decoration: underline;
-    color: aliceblue;
+    color: seashell;
+}
+
+.container {
+    outline: var( --outline-color) 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__box__mission {
+    outline: var( --outline-color) 2px solid;
+    height: 700px;
+    justify-content: center;
+    align-items: center
+}
+
+.container__box__mission__text {
+    outline: var( --outline-color) 2px solid;
+    text-align: center;
 }
