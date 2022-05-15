@@ -57,12 +57,17 @@ body {
 
 .container__box__mission {
     outline: var( --outline-color) 2px solid;
-    height: 700px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center
 }
 
 .container__box__mission__text {
-    outline: var( --outline-color) 2px solid;
-    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    color: seashell;
+    background-color: black;
 }
