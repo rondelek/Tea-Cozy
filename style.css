@@ -7,6 +7,7 @@
 body {
     background-color: black;
     font-family: Helvetica;
+    opacity: 0.9;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; 
+    border-bottom: 1px solid seashell;
 }
 
 #logo {
@@ -32,8 +34,10 @@ header {
     margin-left: auto;
 }
 
-#nav-links li {
+#nav-links a {
     display: flex;
     padding: 13px;
     font-size: 22px;
+    text-decoration: underline;
+    color: aliceblue;
 }
