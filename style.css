@@ -5,7 +5,7 @@
   }
 
 :root {
-    --outline-color: red;
+    --outline-color: transparent;
 }
 
 body {
@@ -57,6 +57,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container__box__mission {
@@ -64,7 +65,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.9;
     height: 700px;
     overflow: hidden;
 }
@@ -75,14 +75,77 @@ body {
 }
 
 .container__box__mission__text {
-    outline: var( --outline-color) 2px solid;
+    background-color: black;
+    width: 1200px;
+    position: absolute;
+}
+
+.text__column {
+    /* outline: var( --outline-color) 2px solid; */
     justify-content: center;
     flex-direction: column;
     align-items: center;
     display: flex;
-    position: absolute;
     color: seashell;
-    background-color: black;
-    width: 1200px;
     line-height: 50px;
 }
+
+.container__box__month {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px 0;
+}
+
+.container__box__month__items {
+    outline: var( --outline-color) 2px solid;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.container__box__month__items__item {
+    outline: var( --outline-color) 2px solid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+}
+
+.container__box__month__items__item__img {
+    /* outline: var( --outline-color) 2px solid; */
+    max-width: 300px;
+    padding-bottom: 10px;
+}
+
+
+.container__box__location__background {
+    outline: var( --outline-color) 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.container__box__location__items {
+    display: flex;
+    justify-content: center;
+}
+
+/* .container__box__location__title {
+    background-color: black;
+    position: relative;
+    width: 300px;
+}
+
+.container__box__location__text {
+    background-color: black;
+    position: absolute;
+    width: 300px;
+} */
