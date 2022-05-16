@@ -104,7 +104,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
+<<<<<<< HEAD
     gap: 20px;
+=======
+    gap: 15px;
+>>>>>>> 27d30082856669adc00b9b8c9e086f33e5e0d167
 }
 
 .container__box__month__items__item {
@@ -113,6 +117,10 @@ body {
     align-items: center;
     flex-direction: column;
     display: flex;
+<<<<<<< HEAD
+=======
+    /*padding: 10px;*/
+>>>>>>> 27d30082856669adc00b9b8c9e086f33e5e0d167
 }
 
 .container__box__month__items__item__img {
@@ -122,20 +130,63 @@ body {
 }
 
 
-.container__box__location__background {
-    outline: var( --outline-color) 2px solid;
+/*.container__box__location__background {*/
+/*    outline: var( --outline-color) 2px solid;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    opacity: 0.9;*/
+/*    min-height: 500px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+.container__box__location{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    opacity: 0.9;
-    min-height: 500px;
-    overflow: hidden;
+    align-items: center;
+
+    background: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1x4mni9*_ga*MTQ2MjE0ODEyMi4xNjQ4NzU4MjA2*_ga_3LRZM6TM9L*MTY1MjYyMDQwMi4xMTUuMS4xNjUyNjIyODQwLjUz");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width: 80vw;
+
+    /*nwm jak 500px oszukujo*/
+    /*height: 500px;*/
+    height: 50vh;
+
+    gap: 15px;
+
+    margin-bottom: 10rem;
+}
+
+
+.container__box__location__header{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #eeeeee;
 }
 
 .container__box__location__items {
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container__box__location__item{
+    background: black;
+    opacity:1;
+    width: 300px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container__box__location__text__title{
+/*tyle, że h3 tak srednio sie rozni od h4*/
+    font-size: 1.4rem;
 }
 
 /* .container__box__location__title {
